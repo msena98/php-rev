@@ -31,8 +31,8 @@ $pessoa1 = [
     'CPF' => '123.456.789-10'
 ];
 
-/*OBS: as chaves de arrays associativos devem ser inteiros ou strings, caso contrário serão convertidos,
-* segundo a tabela de conversões do PHP -> https://www.php.net/manual/pt_BR/types.comparisons.php
+/*OBS: as chaves de arrays associativos devem ser inteiros ou strings, caso contrário serão comparados,
+* segundo a tabela de comparações do PHP -> https://www.php.net/manual/pt_BR/types.comparisons.php
 */
 
 ?>
