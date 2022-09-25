@@ -1,6 +1,11 @@
 <?php 
 
-// arrays
+/* arrays
+*
+* O array no PHP não é um array de verdade, como conhecemos nas demais linguagens. 
+* Internamente, os arrays são armazenados como HashTables (tabelas de espalhamento), por isso eles são tão poderosos. 
+* Têm tamanho dinâmico, podem ter strings como seus índices e podem ser manipulados de diversas formas.
+*/
 
 // criando arrays vazios
 
