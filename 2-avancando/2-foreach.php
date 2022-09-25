@@ -20,7 +20,7 @@ $marcasDeCarros = [
     ]
 ];
 
-// foreach -> "para cada" item do array faça {...}, não precisamos conhecer as chaves de cada item para percorrer seus valores
+// foreach -> "para cada" item do array como $x faça {...}, não precisamos conhecer as chaves de cada array/item para percorrer seus valores
 
 foreach($marcasDeCarros as $marca) {
     echo $marca[0] . PHP_EOL; // irá imprimir para cada marca, seu primeiro veículo "registrado"
