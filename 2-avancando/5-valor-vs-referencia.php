@@ -1,12 +1,13 @@
 <?php 
 
-//valor
+// -> valor
 
 $nome = 'Matheus Sena';
 
-function nomeMaiusculo(string $nome): string
+function nomeMaiusculo(string $nome): void
 {
-    return mb_strtoupper($nome);
+    $nome = mb_strtoupper($nome);
+    return;
 }
 
 nomeMaiusculo($nome);
@@ -18,9 +19,12 @@ echo "Variável de nome '$nome' não modificada após passar pela função que d
 * a cópia da variável, que tem o mesmo valor e o retornou depois.
 */
 
-function nomeMinusculo(string &$nome): string // o & indica que será recebida a referência da variável
+// -> referência
+
+function nomeMinusculo(string &$nome): void // o & indica que será recebida a referência da variável
 {
-    return strtolower($nome);
+    $nome = mb_strtolower($nome,'UTF-8');
+    return;
 }
 
 nomeMinusculo($nome);
