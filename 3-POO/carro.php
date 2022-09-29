@@ -13,9 +13,11 @@ class Carro
     public string $cambio;
     public string $portas;
     public bool $ligado;
+
+    public function ligarCarro(): void
+{
+    $this->ligado = true;
 }
 
-
-public function
-
+}
 ?>
