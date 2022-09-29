@@ -9,10 +9,8 @@ class Carro
 {
     public string $marca;
     public string $modelo;
-    public string $motor;
-    public string $cambio;
-    public string $portas;
     public bool $ligado;
+    public int $bateria;
 
 /* Métodos:
 * Definem os comportamentos do nosso objeto, onde todo objeto istanciado a partir desta classe(Carro),
