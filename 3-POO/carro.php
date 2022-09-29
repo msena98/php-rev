@@ -14,9 +14,13 @@ class Carro
     public string $portas;
     public bool $ligado;
 
+/* Métodos:
+* Definem os comportamentos do nosso objeto, onde todo objeto istanciado a partir desta classe(Carro),
+* irá herdar esses métodos e pode os reescrever também, caso seja necessário.
+*/
     public function ligarCarro(): void
 {
-    $this->ligado = true;
+    $this->ligado = true; //$this se refere ao objeto que "chamou" o método
 }
 
 }
