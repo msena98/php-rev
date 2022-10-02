@@ -1,5 +1,5 @@
 # Sobre o repositório:
 
-Neste repositório são revisados os conceitos básicos de POO.
+Neste repositório são vistos os pilares de Abstração e Encapsulamento de POO.
 
-P.S: Inseri numerações nas classes para fins didáticos(sequência de conteúdos), mas não é uma boa prática, utilize apenas o nome da classe.
+P.S: Inseri numerações nas classes, para fins didáticos(sequência de conteúdos), mas não é uma boa prática, utilize apenas o nome da classe.
