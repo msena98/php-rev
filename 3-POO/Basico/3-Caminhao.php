@@ -2,12 +2,12 @@
 
 class Caminhao
 {
-    private float $capacidade;
-    private string $eixos;
     private readonly string $motorista; 
     /*         /\ aqui definimos o atributo como readonly(PHP 8+), assim só será permitido defini-lo 1x,
     *             para saber mais acesse: https://www.youtube.com/watch?v=u5hge87rCCQ
     */
+    private float $capacidade;
+    private string $eixos;
 
     /*
     * Método construtor __construct():
