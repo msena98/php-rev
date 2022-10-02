@@ -2,4 +2,4 @@
 
 Neste repositório são revisados os conceitos básicos de POO.
 
-P.S: Inseri numerações nas classes para fins didáticos, mas não é uma boa prática, utilize apenas o nome da classe.
+P.S: Inseri numerações nas classes para fins didáticos(sequência de conteúdos), mas não é uma boa prática, utilize apenas o nome da classe.
