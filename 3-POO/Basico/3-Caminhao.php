@@ -10,7 +10,7 @@ class Caminhao
     private string $eixos;
 
     /*
-    * Método construtor __construct():
+    *  Método construtor __construct():
     * Este método é "chamado" toda vez que um objeto da classe é instanciado("criado"), através dele
     * tornamos obrigatório o envio de informações para instanciar o objeto, ou será retornado um fatal error.
     */
@@ -18,6 +18,24 @@ class Caminhao
         $this->capacidade = $capacidade;
         $this->eixos = $eixos;
     }
+
+    /*
+    *  Propety   promotion (PHP 8+):
+    * Para facilitar e evitar ter que escrever várias vezes os atributos da classe, tanto em sua definição de atributos, 
+    * como nos construtor, foi criada a RFC: Constructor Property Promotion, onde podemos definir os atributos da classe
+    * e ao mesmo tempo definir seu construtor:
+    *
+    * class Caminhao
+    * {
+        public function __construct(
+            private readonly string $motorista, 
+            private float $capacidade,
+            private string $eixos,
+        ) {}
+    * }
+    *
+    * Para saber mais, acesse: https://wiki.php.net/rfc/constructor_promotion
+    */
 }
 
 ?>
