@@ -17,8 +17,12 @@ class Veiculo
         $this->modelo = $modelo;
     }
 
-    protected function ligaVeiculo(): void /* Você pode definir métodos e propriedades como "protected", somente a classe
-                                              e suas filhas terão acesso ao método ou atributo que for definido assim */ 
+    /* Você pode definir métodos e atributos como "protected", somente a classe e suas filhas terão 
+    *  acesso ao método ou atributo que for definido assim.
+    *  Utilizando "public", permite que todos tenham acesso, até mesmo fora da classe definida.
+    *  Já o "private" permite que apenas a própria classe ou classe atual, tenha acesso.
+    */
+    protected function ligaVeiculo(): void  
     {
         $this->ligado = true; 
     }
