@@ -15,6 +15,7 @@ class Caminhao
     * tornamos obrigatório o envio de informações para instanciar o objeto, ou será retornado um fatal error.
     */
     public function __construct(string $motorista, float $capacidade, string $eixos) {
+        $this->motorista = $motorista;
         $this->capacidade = $capacidade;
         $this->eixos = $eixos;
     }
