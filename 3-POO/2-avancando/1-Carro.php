@@ -1,27 +1,18 @@
 <?php
 
 
-class Carro 
+class Carro extends Veiculo
 {
-    public string $marca;
-    public string $modelo;
-    public bool $ligado;
-    public int $bateria;
+    private bool $portaMalas;
 
-    public function ligarCarro(): void
+    public function abrePortaMalas()
     {
-        $this->ligado = true; 
-    }
-
-
-    public function transferirBateria(Carro $carro): void
-    {
-        if($this->bateria < 25) 
-        {
-            echo 'Não será possível transferir bateria, nível de carga abaixo de 25%' . PHP_EOL;
+        if ($this->portaMalas) {
+            echo 'O porta malas já se encontra aberto.';
         }
-        $this->bateria -= 10;
-        $carro->bateria += 10;
+
+        $this->portaMalas = false;
+        echo 'O porta malas foi aberto.';
     }
 
 }
