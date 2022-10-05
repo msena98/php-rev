@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Aqui estamos criando uma classe Veiculo, para que os outros veiculos se extendam desta clase,
- * concentrando atributos e métodos em comum em apenas 1 única classe, facilitando manutenção de código.
- */
 class Veiculo 
 {
     private string $marca;
@@ -17,11 +13,6 @@ class Veiculo
         $this->modelo = $modelo;
     }
 
-    /* Você pode definir métodos e atributos como "protected", somente a classe e suas filhas terão 
-    *  acesso ao método ou atributo que for definido assim.
-    *  Utilizando "public", permite que todos tenham acesso, até mesmo fora da classe definida.
-    *  Já o "private" permite que apenas a própria classe ou classe atual, tenha acesso.
-    */
     protected function ligaVeiculo(): void  
     {
         $this->ligado = true; 
@@ -38,5 +29,5 @@ class Veiculo
     }
 
 }
- //CONTINUAR EM 02 - NAMESPACE E AUTOLOAD VIDEO 1 ------------------------------
+
 ?>
