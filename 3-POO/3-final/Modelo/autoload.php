@@ -10,4 +10,6 @@ spl_autoload_register(function (string $nomeCompletoDaClasse) {
     }
 });
 
+//VEERIFICAR AUTOLOAD
+
 ?>
