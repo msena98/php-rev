@@ -38,5 +38,5 @@ class Veiculo
     }
 
 }
- //CONTINUAR EM 02 - NAMESPACE E AUTOLOAD VIDEO 1 ------------------------------
+
 ?>
