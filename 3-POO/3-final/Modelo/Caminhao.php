@@ -1,6 +1,6 @@
 <?php
 
-namespace Sena\Carz\Modelo;
+namespace Sena\Carz\Modelo; // Aqui definimos um namespace, assim evitamos conflitos de nomes entre classes.
 
 class Caminhao extends Veiculo
 {
