@@ -30,6 +30,16 @@ class Veiculo
         $veiculo->bateria += 10;
     }
 
+    public function recuperaMarca(): string
+    {
+       return $this->marca;
+    }
+
+    public function recuperaModelo(): string
+    {
+       return $this->modelo;
+    }
+
 }
 
 ?>
