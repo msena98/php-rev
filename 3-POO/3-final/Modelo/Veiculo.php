@@ -1,6 +1,6 @@
 <?php
 
-namespace Modelo;
+namespace Sena\Carz\Modelo;
 
 class Veiculo 
 {
