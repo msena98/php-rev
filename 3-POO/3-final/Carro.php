@@ -1,12 +1,12 @@
 <?php
 
 
-class Carro extends Veiculo // através de "extends", nós extendemos a classe Veiculo.
+class Carro extends Veiculo 
 {
     private bool $portaMalas;
 
     public function __construct(string $marca, string $modelo) {
-        parent::__construct($marca, $modelo); // dessa maneira, "chamamos" o construtor da classe "pai", evitando erros.
+        parent::__construct($marca, $modelo);
         $this->portaMalas = true;
     }
 
