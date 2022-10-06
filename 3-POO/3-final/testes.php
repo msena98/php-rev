@@ -1,7 +1,6 @@
 <?php
 
-require_once 'Modelo/Veiculo.php';
-require_once 'Modelo/Carro.php';
+require_once 'autoload.php';
 
 use Sena\Carz\Modelo\Carro;
 
