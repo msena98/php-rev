@@ -10,6 +10,11 @@ class Moto extends Veiculo
         parent::__construct($marca, $modelo);
     }
 
+    protected function ligaVeiculo(): void
+    {
+        $this->ligado = true;
+    }
+
     public function recuperaGuidao() : string
     {
         return $this->guidao;
