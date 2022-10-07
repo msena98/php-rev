@@ -2,7 +2,9 @@
 
 namespace Sena\Carz\Modelo;
 
-class Carro extends Veiculo 
+use Limpador;
+
+class Carro extends Veiculo  implements Limpador
 {
     private bool $portaMalas;
 
@@ -24,6 +26,16 @@ class Carro extends Veiculo
 
         $this->portaMalas = false;
         echo 'O porta malas foi aberto.' . PHP_EOL;
+    }
+
+    public function limpaParabrisa(int $nivelDaChuva): void
+    {
+        if ($nivelDaChuva > 5) {
+            echo 'Limpador ativado em velocidade alta';
+        }
+
+        echo 'Limpador ativado em velocidade padrão';
+
     }
 
 }
