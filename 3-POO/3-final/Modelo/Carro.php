@@ -11,6 +11,11 @@ class Carro extends Veiculo
         $this->portaMalas = true;
     }
 
+    protected function ligaVeiculo(): void
+    {
+        $this->ligado = true;
+    }
+
     public function abrePortaMalas()
     {
         if (!$this->portaMalas) {
