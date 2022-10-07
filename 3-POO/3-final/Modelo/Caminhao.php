@@ -15,6 +15,11 @@ class Caminhao extends Veiculo
         $this->eixos = $eixos;
     }
 
+    protected function ligaVeiculo(): void
+    {
+        $this->ligado = true;
+    }
+    
 }
 
 ?>
