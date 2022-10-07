@@ -8,7 +8,8 @@ abstract class Veiculo // definindo classe como abstrata, podendo definir métod
     private string $modelo;
     protected bool $ligado;
     private int $bateria;
-    private float $combustivel;
+    protected float $combustivel;
+    protected float $quilometragem;
 
     public function __construct($marca, $modelo) {
         $this->marca = $marca;
