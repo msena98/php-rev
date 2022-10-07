@@ -2,7 +2,9 @@
 
 namespace Sena\Carz\Modelo; // Aqui definimos um namespace, assim evitamos conflitos de nomes entre classes.
 
-class Caminhao extends Veiculo
+use Limpador;
+
+class Caminhao extends Veiculo implements Limpador
 {
     private readonly string $motorista; 
     private float $capacidade;
@@ -20,6 +22,15 @@ class Caminhao extends Veiculo
         $this->ligado = true;
     }
     
+    public function limpaParabrisa(int $nivelDaChuva): void
+    {
+        if ($nivelDaChuva > 8) {
+            echo 'Limpador ativado em velocidade alta';
+        }
+
+        echo 'Limpador ativado em velocidade padrão';
+
+    }
 }
 
 ?>
