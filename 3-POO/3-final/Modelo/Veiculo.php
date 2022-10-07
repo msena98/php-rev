@@ -2,11 +2,11 @@
 
 namespace Sena\Carz\Modelo;
 
-class Veiculo 
+abstract class Veiculo // definindo classe como abstrata, podendo definir métodos abstratos p/ serem implementados nas filhas
 {
     private string $marca;
     private string $modelo;
-    private bool $ligado;
+    protected bool $ligado;
     private int $bateria;
     private float $combustivel;
 
@@ -15,10 +15,7 @@ class Veiculo
         $this->modelo = $modelo;
     }
 
-    protected function ligaVeiculo(): void  
-    {
-        $this->ligado = true; 
-    }
+    abstract protected function ligaVeiculo(): void; // métodos abstratos DEVEM ser implementados nas classes filhas
 
     protected function transfereBateria(Veiculo $veiculo): void
     {
