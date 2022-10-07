@@ -30,11 +30,11 @@ class Carro extends Veiculo  implements Limpador
 
     public function limpaParabrisa(int $nivelDaChuva): void
     {
-        if ($nivelDaChuva > 5) {
-            echo 'Limpador ativado em velocidade alta';
+        if ($nivelDaChuva < 5) {
+            echo 'Limpador ativado em velocidade padrão.';
         }
 
-        echo 'Limpador ativado em velocidade padrão';
+        echo 'Limpador ativado em velocidade alta!';
 
     }
 
